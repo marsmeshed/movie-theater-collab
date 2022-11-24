@@ -20,13 +20,11 @@ function showSlides(n) {
   }
 }
 
-// var movieCard = document.querySelector('#movie-card');
-
 var dateTime = new Date();
 var deviceDateTime = dateTime.toISOString();
 console.log(deviceDateTime);
 
-fetch('https://api-gate2.movieglu.com/filmsNowShowing/?n=10', {
+fetch('https://api-gate2.movieglu.com/filmsNowShowing/?n=5', {
     'headers': {
         'api-version': 'v200',
         'Authorization': 'Basic TU9WSV8xMzk6TVBranBHdlFJY1hF',
@@ -42,6 +40,22 @@ fetch('https://api-gate2.movieglu.com/filmsNowShowing/?n=10', {
 .then(function(data) {
     console.log(data);
 
+    var slideIndex = [1, 2, 3, 4, 5];
+    var filmsArray = data.films;
+    console.log(filmsArray);
 
+    for(var i = 0; i < filmsArray.length; i++) {
+        var movieTrailer = document.querySelector('#image-slide-' + slideIndex[i]);
+        var movieTitle = document.querySelector('#movie-title-' + slideIndex[i]);
+        var movieDescription = document.querySelector('#movie-description-' + slideIndex[i]);
+
+        var trailer = filmsArray[i].film_trailer;
+        console.log(trailer);
+        var title = filmsArray[i].film_name;
+        var description = filmsArray[i].synopsis_long;
+        movieTrailer.src = trailer;
+        movieTitle.textContent = title;
+        movieDescription.textContent = description;
+    }
 })
 
