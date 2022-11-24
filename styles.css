@@ -1,98 +1,37 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+#hero {
+  background: url('seats.webp');
+  height: 1070px;
+  background-position-x: center;
+  background-size: cover;
 }
 
-nav {
-  height: 80px;
-  background: gray;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0rem calc((100vw - 1300px) / 2);
+#hero .navbar.is-transparent {
+  background-color: transparent;
 }
 
-.logo {
-  color: black;
-  font-size: 100px;
-  font-weight: bold;
-  font-style: italic;
-  padding: 0;
-  margin-top: 650px;
-  margin-left: 5px;
+.service-buttons {
+  justify-content: center !important;
 }
 
-nav a {
-  text-decoration: none;
-  color: black;
-  padding: 0 8px;
+.logos:before {
+  content: '';
+  position: absolute;
+  width: 50%;
+  left: 25%;
+  top: 0;
+  border-top: 1px solid black;
 }
 
-nav a:hover {
-  color: white;
+#contact {
+  background: url('seats.webp');
+  background-size: cover;
 }
 
-.hero {
-  background: gray;
-}
-
-.hero-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  height: 95vh;
-  padding: 0rem calc((100vw - 1300px) / 2);
-}
-
-.column-left {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  color: black;
-}
-
-.column-left h1 {
-  margin-bottom: 15px;
-  font-size: 30px;
-}
-
-.column-left p {
-  margin-bottom: 10px;
-  font-size: 20px;
-  line-height: 15px;
-}
-
-.button is-black{
-  padding: 8px 30px;
-  font-size: 30px;
-  border: none;
-  color: gray;
-  background: black;
-  border-radius: 50px;
-}
-
-button is-black:hover {
-  background: rgba(14, 14, 14, 0.699);
-  color: black;
-  transition: color 0.15s, background-color 0.15s;
-}
-
-.column-right {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0px 2px;
-}
-
-.hero-image {
-  height: 300px;
-  width: 100%;
-}
-
-@media screen and (max-width: 768px) {
-  .hero-container {
-    grid-template-columns: 1fr;
+@media screen and (max-width: 1023px) {
+  .navbar-menu a.has-text-white {
+    color: black !important;
+  }
+  .navbar-menu a.has-text-white:hover {
+    color: white;
   }
 }
