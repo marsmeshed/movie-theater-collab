@@ -17,164 +17,24 @@
 </head>
 
 <body>
-  <header class="section has-background-link py-4 has-text-white">
-    <div class="container">
-      <div class="columns">
-        <div class="column">
-          <span class="icon">
-           <i class="far fa-envelope"></i>
-          </span>
-          email@company.com
-        </div>
-        <div class="column">
-          <span class="icon">
-           <i class="fas fa-phone-volume"></i>
-          </span>
-          +1 706-434-2324
-        </div>
-        <div class="column has-text-right-tablet">
-          <span class="icon">
-           <i class="fas fa-headphones-alt"></i>
-          </span>
-          Support
-        </div>
-      </div>
-    </div>
-  </header>
-  <section class="section" id="hero">
-  <div class="container">
-    <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-        <a role="button" class="navbar-burger burger has-text-black" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-    </nav>
-    <div class="columns pt-6">
-      <div class="column mt-6">
-        <span class="icon has-text-black">
-          <i class="far fa-chart-bar fa-lg"></i>
-        </span>
-        <h1 class="is-sieze-1 has-text-black">
-          Find a theater near you<br />
-          & get information easier than ever
-        </h1>
-        <p class="has-text-black">
-          Click the "Find Movies!" button below to start your movie journey.
-        </p>
-        <button class="button is-black mt-4">
-          Find Movies!
-        </button>
-      </div>
-      <div class="column mt-6">
-        <img src="seats.webp" alt="movie seats">
-      </div>
-    </div>
+  
+  <figure class="image is-fullwidth" id="hero">
+    <img src="./3670.jpg">
+  </figure>
+  <div class="info-card">
+    <p class="title has-text-black">
+      Find the top movies<br />
+      now playing in theaters<br />
+      & get information easier than ever
+    </p>
+    <p class="subtitle has-text-black">
+      Click the "Find Movies!" button below to start your movie journey.
+    </p>
+    <button class="button is-black mt-4">
+      <a href="./movie.html" rel="second page">Find Movies!</a>
+    </button>
   </div>
-  </section>
-  <section class="section" id="services">
-    <div class="container">
-      <div class="has-text-centered">
-        <h2 class="title is-2">Find your next Movie!</h2>
-        <h6 class="subtitle is-6 has-text-grey">
-          Click the button below in order to find a movie and specific information.
-        </h6>
-      </div>
-      <div class="field is-grouped mt-6 is-flex service-buttons">
-        <p class="control">
-          <!--Useless button, maybe-->
-          <button class="button is-black">
-            Useless button? IP maybe
-          </button>
-        </p>
-        <p class="control">
-          <!--Useless button, maybe-->
-          <button class="button is-info">
-            Reviews
-          </button>
-        </p>
-      </div>
-      <div class="columns mt-6 pt-5 logos is-relative">
-        <div class="column">
-          <!--An image could go here-->
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="section" id="contact">
-  <div class="container">
-    <div class="columns">
-      <div class="column">
-        <div class="card">
-          <header class="card-header has-background-black">
-            <p class="card-header-title">
-              Location
-            </p>
-          </header>
-          <div class="card-content">
-            <div class="field">
-              <label for="" class="label">Zipcode</label>
-              <p class="control">
-                <input type="text" class="input" placeholder="Find a theater near you">
-              </p>
-            </div>
-
-            <div class="field">
-              <label for="" class="label">Name</label>
-              <p class="control">
-                <input type="text" class="input" placeholder="Enter your name">
-              </p>
-            </div>
-            <div class="field">
-              <p class="control">
-                <button class="button is-black">
-                  Search
-                </button>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="column has-text-black pt-6 pl-6">
-        <span class="icon is-size-1 pb-6 my-3 has-text-grey-lighter">
-          <i class="fas fa-quote-left"></i>
-        </span>
-        <p>
-          This is the greatest movie-search-site ever!
-        </p>
-        <p class="has-text-weight-bold pt-3 is-size-4">John Doe</p>
-        <span class="icon is-size-1 pt-6 pr-3 my-3 has-text-grey-lighter is-pulled-right">
-          <i class="fas fa-quote-right"></i>
-        </span>
-      </div>
-    </div>
-  </div>
-  </section>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-
-// Get all "navbar-burger" elements
-const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-// Add a click event on each of them
-$navbarBurgers.forEach( el => {
-  el.addEventListener('click', () => {
-
-    // Get the target from the "data-target" attribute
-    const target = el.dataset.target;
-    const $target = document.getElementById(target);
-
-    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-    el.classList.toggle('is-active');
-    $target.classList.toggle('is-active');
-
-  });
-});
-
-});
-  </script>
+  
 </body>
 </html>
    
