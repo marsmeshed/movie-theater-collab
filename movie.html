@@ -12,6 +12,16 @@
 <header>
     <nav class="navbar is-white" role="navigation" aria-label="main navigation">
             <h1 class="title is-1 has-black-white">MOVIE TIME</h1>
+            <div class="field is-grouped">
+                <p class="control is-expanded">
+                  <input id="zipcode-input" class="input" type="text" placeholder="Enter a Zip Code">
+                </p>
+                <p class="control">
+                  <a id="search-button" class="button is-info">
+                    Search
+                  </a>
+                </p>
+            </div>
         <div id="navbarBasicExample" class="navbar-end">
             <div class="navbar-start">
               <a class="navbar-item">
@@ -25,7 +35,9 @@
               <a class="navbar-item">
                 Reviews
               </a>
-                </nav>
+            </div>
+        </div>
+    </nav>
 </header>
 <main>
 <body>
@@ -51,7 +63,13 @@
                   </p>
               </div>
               <br>
-              <time> Showtimes: </time>
+              <time id="showtime-1"> Showtimes: 
+                <!-- <p>11:30 AM</p>
+                <p>1:10 PM</p>
+                <p>3:15 PM</p>
+                <p>5:20 PM</p>
+                <p>6:55 PM</p> -->
+              </time>
               <br>
               <div class="reviews">
                 <h3>Reviews:</h3>
@@ -79,7 +97,13 @@
                   </p>
               </div>
               <br>
-              <time> Showtimes: </time>
+              <time id="showtime-2"> Showtimes: 
+                <!-- <p>11:55 AM</p>
+                <p>1:20 PM</p>
+                <p>2:50 PM</p>
+                <p>4:10 PM</p>
+                <p>6:10 PM</p> -->
+              </time>
               <br>
               <div class="reviews">
                 <h3>Reviews:</h3>
@@ -107,7 +131,13 @@
                   </p>
               </div>
               <br>
-              <time> Showtimes: </time>
+              <time id="showtime-3"> Showtimes: 
+                <!-- <p>10:55 AM</p>
+                <p>1:40 PM</p>
+                <p>4:30 PM</p>
+                <p>7:20 PM</p>
+                <p>10:10 PM</p> -->
+              </time>
               <br>
               <div class="reviews">
                 <h3>Reviews:</h3>
@@ -135,7 +165,11 @@
                     </p>
                 </div>
                 <br>
-                <time> Showtimes: </time>
+                <time id="showtime-4"> Showtimes: 
+                    <!-- <p>2:50 PM</p>
+                    <p>6:20 PM</p>
+                    <p>9:50 PM</p> -->
+                </time>
                 <br>
                 <div class="reviews">
                   <h3>Reviews:</h3>
@@ -163,7 +197,12 @@
                     </p>
                 </div>
                 <br>
-                <time> Showtimes: </time>
+                <time id="showtime-5"> Showtimes: 
+                    <!-- <p>12:40 PM</p>
+                    <p>3:55 PM</p>
+                    <p>7:05 PM</p>
+                    <p>10:25 PM</p> -->
+                </time>
                 <br>
                 <div class="reviews">
                   <h3>Reviews:</h3>
@@ -182,6 +221,11 @@
        autoplay: true,
       });
 </script>
+<script
+      src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+      integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+      crossorigin="anonymous"
+></script>
 <script src="./assets/js/script.js"></script>
 </body>
 </main>
