@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.top {
+    display: inline;
+    background-color: black;
+}
+
+.field {
+    float: right;
+    margin-top: 23px;
+    margin-right: 8px;
+}
+header {
+    color: #f14668;
+    background-color: black;
+    font-size: 60px;
+    margin-bottom: 5px;
+}
