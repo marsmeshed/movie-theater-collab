@@ -34,5 +34,5 @@ The list below are the technologies we used to build this application:
 ![](./Assets/resources/Untitled_%20Nov%2030%2C%202022%206_09%20PM.gif)
 
 ## Project URLs
-* Deployed site URL:https://nguyensang0323.github.io/movie-theater-collab/
+* Deployed site URL: https://marsmeshed.github.io/movie-theater-collab
 * GitHub Repo URL: https://github.com/marsmeshed/movie-theater-collab
