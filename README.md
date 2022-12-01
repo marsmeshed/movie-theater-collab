@@ -30,8 +30,9 @@ The list below are the technologies we used to build this application:
 
 ## Demo of Deployed site
 * Below is a demo of the deployed site with a user navigating from the landing page to the main page, inputting their zip code and checking that it is stored into the local storage.
-![]()
+
+![](./Assets/resources/Untitled_%20Nov%2030%2C%202022%206_09%20PM.gif)
 
 ## Project URLs
-* Deployed site URL:
-* GitHub Repo URL: 
+* Deployed site URL:https://nguyensang0323.github.io/movie-theater-collab/
+* GitHub Repo URL: https://github.com/marsmeshed/movie-theater-collab
